@@ -15,7 +15,8 @@ public class NeedOfTestNG {
         WebDriver driver = new ChromeDriver(); //Upcasting//browser driver path pick and set up in backend bydefault
         driver.get("https://www.tcs.com/");
         driver.manage().window().maximize();
-        driver.close();
+		System.out.println("Hello git");
+       
 
     }
     @Test
