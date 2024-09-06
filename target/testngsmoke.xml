@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Dell/IdeaProjects/Maven_TestNG">
+        <classes>  <!--We can remove all methods with method tag from testng.xmlfile even then all classes will run-->
+            <class name="testngbasic.AlwaysRun">
+                <methods>
+                    <include name="verifySIgnUp"/>
+                    <include name="verifyLogIn"/>
+                    <include name="verifyHomePage"/>
+                </methods>
+            </class>
+            <class name="testngbasic.BeforeAfterMethodAndClassPrint">
+                <methods>
+                    <include name="verifyMethod_1"/>
+                    <include name="verifyMethod_2"/>
+                    <include name="verifyMethod_3"/>
+                </methods>
+            </class>
+            <class name="testngbasic.BeforeAndAfterMethodAnnotation">
+                <methods>
+                    <include name="verifyOpenUrlTcs"/>
+                    <include name="verifyOpenUrlAmazon"/>
+                    <include name="verifyOpenUrlFlipkart"/>
+                </methods>
+            </class>
+            <class name="testngbasic.DependsOnMethods">
+                <methods>
+                    <include name="verifyLogIn"/>
+                    <include name="verifyHomePage"/>
+                    <include name="verifySIgnUp"/>
+                </methods>
+            </class>
+            <class name="testngbasic.DisableTestCase">
+                <methods>
+                    <include name="verifyLogIn"/>
+                    <include name="verifySIgnUp"/>
+                </methods>
+            </class>
+            <class name="testngbasic.InvocationCountAndTimeOut">
+                <methods>
+                    <include name="verifyInvocationCount"/>
+                    <include name="verifyInvocationTimeOut"/>
+                </methods>
+            </class>
+            <class name="testngbasic.NeedOfTestNG">
+                <methods>
+                    <include name="openUrl1"/>
+                    <include name="openUrl2"/>
+                    <include name="openUrl3"/>
+                </methods>
+            </class>
+            <class name="testngbasic.PriorityWith">
+                <methods>
+                    <include name="testCase10"/>
+                    <include name="testCaseY"/>
+                    <include name="testCaseH"/>
+                    <include name="testCaseA"/>
+                    <include name="testCaseD"/>
+                    <include name="testCaseR"/>
+                    <include name="testCaseX"/>
+                    <include name="testCaseZ"/>
+                    <include name="testCase8"/>
+                    <include name="testCasez"/>
+                    <include name="testCasec"/>
+                    <include name="testCaset"/>
+                </methods>
+            </class>
+            <class name="testngbasic.WithoutPriority">
+                <methods>
+                    <include name="testCase10"/>
+                    <include name="testCaseY"/>
+                    <include name="testCaseH"/>
+                    <include name="testCaseA"/>
+                    <include name="testCaseD"/>
+                    <include name="testCaseR"/>
+                    <include name="testCaseX"/>
+                    <include name="testCaseZ"/>
+                    <include name="testCase8"/>
+                    <include name="testCasez"/>
+                    <include name="testCasec"/>
+                    <include name="testCaset"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
