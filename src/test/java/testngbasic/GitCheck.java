@@ -67,5 +67,9 @@ public class WithoutPriority {
     public void testCaset(){
         System.out.println("Test Case t");
     }
+	@Test
+    public void testCaseO(){
+        System.out.println("Test Case O");
+    }
 }
 
